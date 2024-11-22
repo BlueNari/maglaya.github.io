@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Jason Ignacio - Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+
+  <head>
+    <body>
+      <div id="welcome">
+        <div class="welcome-box">
+          Welcome to my Portfolio! Press START to begin your journey.
+        </div>
+        <button id="start-button">START</button>
+      </div>
+
+      <div id="portfolio">
+        <div id="information">
+          <h2 style="text-align: center">About Me</h2>
+          <div id="profile-pic"></div>
+          <p>Name: Jason Ignacio</p>
+          <p>Class: Computer Scientist</p>
+          <p>Race: Filipino</p>
+          <p>Affiliation: Pati Ako</p>
+          <p>Languages: English Filipino, Thai, Russian</p>
+        </div>
+
+        <div id="buttons">
+          <button class="button-designs" onclick="openPopup('1')">
+            Inventory
+          </button>
+          <button class="button-designs" onclick="openPopup('2')">
+            Skills
+          </button>
+          <button class="button-designs" onclick="openPopup('3')">
+            Projects
+          </button>
+        </div>
+      </div>
+
+      <div id="1" class="popup-window">
+        <h3>Inventory</h3>
+        <li>Resume x1</li>
+        <li>GED Diploma x1</li>
+        <li>GED Transcript x1</li>
+      </div>
+
+      <div id="2" class="popup-window">
+        <h3>Skills</h3>
+        <li>Java</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </div>
+
+      <div id="3" class="popup-window">
+        <h3>Projects</h3>
+        <li>N/A</li>
+      </div>
+
+      <div id="music-controls" style="display: none">
+        <button id="music-toggle">Play Music</button>
+      </div>
+
+      <audio id="background-music" loop>
+        <source src="assets/bgm.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- Contact Section -->
+      <div id="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <div class="contact-field">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="contact-field">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="contact-field">
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" id="submit-button">Send</button>
+        </form>
+        <div id="social-icons">
+          <a href="https://www.facebook.com" target="_blank" class="icon">
+            <img src="assets/facebook-icon.png" alt="Facebook" />
+          </a>
+          <a
+            href="https://www.instagram.com/eurilaya"
+            target="_blank"
+            class="icon"
+          >
+            <img src="assets/instagram-icon.png" alt="Instagram" />
+          </a>
+          <a href="tel:+63 995 779 6147" class="icon">
+            <img src="assets/phone-icon.png" alt="Phone" />
+          </a>
+          <a href="mailto:bluenari21@gmail.com" class="icon">
+            <img src="assets/email-icon.png" alt="Email" />
+          </a>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+  </head>
+</html>
